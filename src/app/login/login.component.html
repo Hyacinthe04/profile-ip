@@ -1,3 +1,21 @@
-<p>
-  login works!
-</p>
+<div class="input-form">
+<input class="input-field" type="text" placeholder="Username" [(ngModel)]="userName">
+<button (click)="submitInput()">Search</button>
+</div>
+<div class="container">
+
+  <div class="row">
+      <!-- <blockquote class="text-center text-lg"> -->
+          <img src="{{profile.avatar_url}}">
+          <p>login:{{profile.login}}<p>
+          <p>repository:{{profile.public_repos}}<p>
+          <p>followers:{{profile.followers}}<p>
+          <p>following:{{profile.following}}<p>
+          <p>location:{{profile.location}}<p>
+       <p> <a href="{{profile.html_url}}"></a></p><br><br><br>
+          <!-- <p>{{repository.completeDate}}</p> -->
+
+      <!-- </blockquote> -->
+  </div>
+
+</div>
