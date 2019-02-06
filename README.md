@@ -12,3 +12,6 @@
  ## link to live site on GitHub Pages 
  https://github.com/Hyacinthe04/profile-ip
  ## copyright and license information
+ This project is licensed under the MIT license.
+
+Copyright (c) 2019 {Hyacinthe Ndayiragije}
