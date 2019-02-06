@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* @import "~bootstrap/dist/css/bootstrap.css" */
+*{
+    background-color: burlywood;
+}
+.row{
+    text-align: center;
+    
+    font-style: oblique;
+    color: blue;
+    
+}
+.date{
+    text-align: center;
+}
+.input-form{
+    text-align: center;
+}
