@@ -10,7 +10,7 @@ export class ProfilesRequestService {
     profile:Profile;
 
   constructor(private http:HttpClient) { 
-    this.profile=new Profile("","",0,0,0,"","");
+    this.profile=new Profile("","",0,0,0,"","",new Date(2019,2,6));
 
   }
 
@@ -28,7 +28,7 @@ export class ProfilesRequestService {
       public_repos:number;
       location:string;
       html_url:string;
-
+      completeDate:Date;
     }
     let promise =new Promise((resolve,reject)=>{
         this.http.get<ApiResponse>('https://api.github.com/users/'+userInput).toPromise().then(response=>{
@@ -40,6 +40,7 @@ export class ProfilesRequestService {
             this.profile.public_repos=response.public_repos
             this.profile.location=response.location
             this.profile.html_url=response.html_url
+            this.profile.completeDate=response.completeDate
 
             resolve()
         },
@@ -51,6 +52,7 @@ export class ProfilesRequestService {
           this.profile.public_repos=9
           this.profile.location="juy"
           this.profile.html_url="kolo"
+          this.profile.completeDate=new Date(2019,2,6)
                 reject(error)
             }
         )
