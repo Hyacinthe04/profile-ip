@@ -12,10 +12,12 @@
           <p>followers:{{profile.followers}}<p>
           <p>following:{{profile.following}}<p>
           <p>location:{{profile.location}}<p>
-       <p> <a href="{{profile.html_url}}"></a></p><br><br><br>
+            <a href="{{profile.html_url}}" target="_blank">link to github repositories</a><br><br><br>
+
           <!-- <p>{{repository.completeDate}}</p> -->
 
       <!-- </blockquote> -->
   </div>
 
+<p>This profile will be completed in {{profile.completeDate|dateCount}} days</p>
 </div>
